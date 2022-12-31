@@ -1,0 +1,25 @@
+<p>sales-report works!</p>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-hover" style="cursor: pointer;">
+        <thead class="thead-light">
+          <tr>
+            <th>Category</th>
+            <th>Branch</th>
+            <th>Total Qty</th>
+            <th>Total Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let report of saleReports">
+            <th> {{report.categoryName}}</th>
+            <td>{{report.branchName}}</td>
+            <td>{{report.branchTotalQty}}</td>
+            <td>{{report.branchTotalAmount}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
